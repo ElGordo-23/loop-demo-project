@@ -4,7 +4,7 @@ import Image from 'next/image';
 const navWrapper = css`
   display: flex;
   width: 1400px;
-  height: 83px;
+  height: 82px;
   justify-content: space-between;
   font-family: Arial;
   background: white;
@@ -15,7 +15,7 @@ const navWrapper = css`
     text-transform: uppercase;
     text-align: center;
     width: 700px;
-    height: 83px;
+    height: 82px;
     margin-left: 10px;
     padding: 40px;
   }
@@ -26,8 +26,12 @@ const navWrapper = css`
 
   div {
     background-color: #c4132f;
-    height: 83px;
+    height: 82px;
     width: 450px;
+  }
+
+  Image {
+    margin: 5px;
   }
 `;
 

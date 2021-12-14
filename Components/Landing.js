@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 const mainWrapper = css`
-  width: 1400;
+  width: 100%;
   max-width: 1400px;
   height: 780px;
   position: relative;
