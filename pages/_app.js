@@ -17,6 +17,9 @@ function MyApp({ Component, pageProps }) {
           body {
             background-color: #e5eaee;
             margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         `}
       />

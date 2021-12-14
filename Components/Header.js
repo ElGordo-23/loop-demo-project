@@ -7,6 +7,7 @@ const navWrapper = css`
   height: 82px;
   justify-content: space-between;
   font-family: Arial;
+  font-weight: bold;
   background: white;
   nav {
     display: flex;
@@ -22,6 +23,7 @@ const navWrapper = css`
   nav p {
     position: relative;
     display: inline-block;
+    cursor: pointer;
   }
 
   div {

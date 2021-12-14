@@ -23,8 +23,10 @@ const trioWrapper2 = css`
 
 const rightSide = css`
   width: 700px;
+  height: 560px;
   display: flex;
   flex-direction: column;
+  justify-content: end;
 `;
 
 const imagesWrapper = css`
@@ -44,19 +46,19 @@ export default function MiddleBox() {
           <Image
             src="/Adria-Route.jpg"
             alt="Map of the Adriatic"
-            height="260px"
+            height="280px"
             width="700px"
           />
           <div css={imagesWrapper}>
-            <div css={smallImageWrapper}>
-              <Image src="/Sailors.png" alt="Sailors on a boat" layout="fill" />
-            </div>
             <div css={smallImageWrapper}>
               <Image
                 src="/HR-Flag.png"
                 alt="The Flag of Craotia"
                 layout="fill"
               />
+            </div>
+            <div css={smallImageWrapper}>
+              <Image src="/Sailors.png" alt="Sailors on a boat" layout="fill" />
             </div>
           </div>
         </div>

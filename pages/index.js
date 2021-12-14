@@ -3,8 +3,10 @@ import Image from 'next/image';
 import MiddleBox from '../Components/BoxMiddle';
 import Header from '../Components/Header';
 import Main from '../Components/Landing';
+import News from '../Components/News-Dates';
+import Text from '../Components/Text';
 
-const wrapperMain = css`
+const masterWrapper = css`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,22 +47,26 @@ const trioStyle2 = css`
 export default function Home() {
   return (
     <div>
-      <Header />
-      <Main />
+      <div>
+        <Header />
+        <Main />
 
-      <div css={trioWrapper}>
-        <div css={trioStyle}>
-          <div className="TrioLeft"></div>
-          <div className="TrioLeft2"></div>
-        </div>
+        <div css={trioWrapper}>
+          <div css={trioStyle}>
+            <div className="TrioLeft"></div>
+            <div className="TrioLeft2"></div>
+          </div>
 
-        <div css={trioStyle2}>
-          <div className="TrioRight">
-            <Image src="/Adria.png" alt="Map of the Adriatic" layout="fill" />
+          <div css={trioStyle2}>
+            <div className="TrioRight">
+              <Image src="/Adria.png" alt="Map of the Adriatic" layout="fill" />
+            </div>
           </div>
         </div>
+        <MiddleBox />
+        <News />
+        <Text />
       </div>
-      <MiddleBox />
     </div>
   );
 }
