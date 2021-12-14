@@ -7,7 +7,9 @@ const mainTextWrapper = css`
   height: 850px;
   max-width: 1400px;
   position: relative;
-  top: -40px;
+  top: -140px;
+  background-color: #ffffff;
+  z-index: -2;
 `;
 
 const headlineStyle = css`
@@ -15,6 +17,9 @@ const headlineStyle = css`
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-family: Arial;
+  background-color: #ffffff;
+  margin-top: 80px;
+
   h2 {
     color: #000000;
     font-size: 12.46px;

@@ -11,7 +11,7 @@ const navWrapper = css`
   background: white;
   nav {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
     align-items: center;
     text-transform: uppercase;
     text-align: center;
@@ -20,7 +20,7 @@ const navWrapper = css`
     margin-left: 10px;
     padding: 40px;
   }
-  nav p {
+  nav a {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -41,10 +41,10 @@ export default function Header() {
   return (
     <div css={navWrapper}>
       <nav>
-        <p>About Us</p>
-        <p>Gallery</p>
-        <p>Crew</p>
-        <p>Contact</p>
+        <a>About Us</a>
+        <a>Gallery</a>
+        <a>Crew</a>
+        <a>Contact</a>
       </nav>
       <div>
         <Image

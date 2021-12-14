@@ -1,17 +1,16 @@
 import { css } from '@emotion/react';
 import Image from 'next/image';
 import MiddleBox from '../Components/BoxMiddle';
+import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import Main from '../Components/Landing';
 import News from '../Components/News-Dates';
+import Team from '../Components/Team';
 import Text from '../Components/Text';
 
 const masterWrapper = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   max-width: 1400px;
+  z-index: -10;
 `;
 
 const trioWrapper = css`
@@ -44,9 +43,26 @@ const trioStyle2 = css`
   position: relative;
 `;
 
+const path = css`
+  max-width: 1400px;
+  height: 354px;
+  position: relative;
+  top: -390px;
+`;
+
+const blackBreak = css`
+  background-image: url('/Rectangle_1.png');
+  max-width: 1400px;
+  height: 160px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: -1;
+  top: -550px;
+`;
+
 export default function Home() {
   return (
-    <div>
+    <div css={masterWrapper}>
       <div>
         <Header />
         <Main />
@@ -59,13 +75,23 @@ export default function Home() {
 
           <div css={trioStyle2}>
             <div className="TrioRight">
-              <Image src="/Adria.png" alt="Map of the Adriatic" layout="fill" />
+              <Image
+                src="/Adria1.png"
+                alt="Map of the Adriatic"
+                layout="fill"
+              />
             </div>
           </div>
         </div>
         <MiddleBox />
         <News />
         <Text />
+        <div css={path}>
+          <Image src="/path.png" alt="Path Illustration" layout="fill" />
+        </div>
+        <div css={blackBreak} />
+        <Team />
+        <Footer />
       </div>
     </div>
   );

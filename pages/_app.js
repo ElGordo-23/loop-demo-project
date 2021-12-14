@@ -5,10 +5,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Global
         styles={css`
-          @font-face {
-            font-family: Arial, Helvetica, sans-serif;
-            src: url();
-          }
           *,
           ::before,
           *::after {
@@ -20,6 +16,7 @@ function MyApp({ Component, pageProps }) {
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
           }
         `}
       />
