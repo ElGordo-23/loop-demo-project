@@ -29,10 +29,87 @@ const trioStyle = css`
     height: 360px;
     position: relative;
   }
+  .TextLeft {
+    position: relative;
+    top: 195px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
   .TrioLeft2 {
     width: 350px;
     height: 360px;
     background: black;
+  }
+  .TrioLeft h3 {
+    color: #c4132f;
+    text-transform: uppercase;
+  }
+
+  .TextLeft .DateWrapper {
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+  }
+  .TrioLeft .CalendarImage {
+    position: relative;
+    height: 28px;
+    width: 28px;
+  }
+
+  .TrioLeft .Date {
+    width: 88px;
+    height: 12px;
+    font-family: Arial;
+    color: #717171;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .TrioLeft2 .WhiteText {
+    color: white;
+  }
+
+  .TrioLeft2 .CalendarImage {
+    position: relative;
+    height: 28px;
+    width: 28px;
+  }
+
+  .TrioLeft2 .Date {
+    width: 88px;
+    height: 12px;
+    font-family: Arial;
+    color: #717171;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .TrioLeft2 h3 {
+    color: #c4132f;
+    text-transform: uppercase;
+  }
+
+  .TextLeft .DateWrapper {
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+  }
+  .TrioLeft2 .CalendarImage {
+    position: relative;
+    height: 28px;
+    width: 28px;
+  }
+
+  .TrioLeft2 .Date {
+    width: 88px;
+    height: 12px;
+    font-family: Arial;
+    color: #717171;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
   }
 `;
 
@@ -69,8 +146,36 @@ export default function Home() {
 
         <div css={trioWrapper}>
           <div css={trioStyle}>
-            <div className="TrioLeft"></div>
-            <div className="TrioLeft2"></div>
+            <div className="TrioLeft">
+              <div className="TextLeft">
+                <div className="DateWrapper">
+                  <div className="CalendarImage">
+                    <Image src="/Calendar.png" alt="Calendar" layout="fill" />
+                  </div>
+                  <p className="Date">23.Mai.2021</p>
+                </div>
+                <h3>News Headline</h3>
+                <p>
+                  Lorem Ipsum. Proin gravida nibh velit auctor aliquet. Aenean
+                  sollicitudin.
+                </p>
+              </div>
+            </div>
+            <div className="TrioLeft2">
+              <div className="TextLeft">
+                <div className="DateWrapper">
+                  <div className="CalendarImage">
+                    <Image src="/Calendar.png" alt="Calendar" layout="fill" />
+                  </div>
+                  <p className="Date">23.Mai.2021</p>
+                </div>
+                <h3>News Headline</h3>
+                <p className="WhiteText">
+                  Lorem Ipsum. Proin gravida nibh velit auctor aliquet. Aenean
+                  sollicitudin.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div css={trioStyle2}>
