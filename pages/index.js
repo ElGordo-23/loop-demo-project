@@ -118,6 +118,37 @@ const trioStyle2 = css`
   width: 700px;
   height: 360px;
   position: relative;
+  .TrioRight {
+    height: inherit;
+    width: inherit;
+  }
+
+  .TrioRight .TextRight {
+    position: relative;
+    top: 170px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    h2 {
+      text-transform: uppercase;
+      color: #000000;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 13.706px;
+      margin: 0;
+    }
+    h3 {
+      text-transform: uppercase;
+      color: #c4132f;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    h4 {
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
 `;
 
 const path = css`
@@ -185,6 +216,15 @@ export default function Home() {
                 alt="Map of the Adriatic"
                 layout="fill"
               />
+              <div className="TextRight">
+                <h2>17 Mai</h2>
+                <h3>Headline Beitrag 2021</h3>
+                <h4>Subtitle</h4>
+                <p>
+                  Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor.
+                </p>
+              </div>
             </div>
           </div>
         </div>

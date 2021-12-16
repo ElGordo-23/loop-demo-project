@@ -24,6 +24,9 @@ const navWrapper = css`
     position: relative;
     display: inline-block;
     cursor: pointer;
+    :hover {
+      text-decoration: underline;
+    }
   }
 
   div {
