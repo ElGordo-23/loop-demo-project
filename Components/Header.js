@@ -33,10 +33,8 @@ const navWrapper = css`
     background-color: #c4132f;
     height: 82px;
     width: 450px;
-  }
-
-  Image {
-    margin: 5px;
+    padding-left: 140px;
+    padding-top: 12px;
   }
 `;
 

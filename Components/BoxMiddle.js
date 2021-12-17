@@ -47,6 +47,10 @@ const rightSide = css`
       margin-top: 20px;
       margin-bottom: 10px;
       font-size: 24px;
+      cursor: pointer;
+      :hover {
+        text-decoration: underline;
+      }
     }
 
     h4 {
