@@ -225,6 +225,8 @@ export default function Team() {
 
   const [displNum, setDisplNum] = useState(10);
 
+  const [toggleTeam, setToggleTeam] = useState(false);
+
   const teamfilter = crew.filter((e) => {
     return e.duty_slugs.includes(filterTeam) === true;
   });

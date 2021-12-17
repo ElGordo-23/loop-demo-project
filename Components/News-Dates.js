@@ -61,7 +61,7 @@ export default function News() {
             <Image src="/CalendarWhite.png" alt="Calendar Icon" layout="fill" />
           </div>
           <p>Segelteam</p>
-          <p>Terine 2021 </p>
+          <p>Termine 2021 </p>
         </div>
       </div>
     </div>
